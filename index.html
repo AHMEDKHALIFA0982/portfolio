@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Khalifa | Mechatronics & .NET Full Stack Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ahmed Khalifa: Mechatronics Engineer, Teaching Assistant, Production Engineer, robotics, embedded systems, .NET full stack, ASP.NET Core MVC, SQL Server, ROS, Arduino, ESP32, MATLAB and automation projects, and smart solar grass-cutting robot navigation." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Ahmed<span>Khalifa</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-btn">About</a>
+        <a href="#skills" class="nav-btn">Skills</a>
+        <a href="#projects" class="nav-btn">Projects</a>
+        <a href="#experience" class="nav-btn">Experience</a>
+        <a href="#courses" class="nav-btn">Courses</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Mechatronics Engineer • Robotics • .NET Full Stack</p>
+          <h1>Hi, I’m <span>Ahmed Khalifa</span>.</h1>
+          <p class="hero-text">
+            I build practical engineering and software solutions combining automation,
+            robotics, embedded systems, web applications, and database-driven systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire / Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>2+</strong>
+              <span>Current Roles</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Portfolio Projects</span>
+            </div>
+            <div>
+              <strong>.NET</strong>
+              <span>Full Stack Track</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">AK</div>
+          <h2>Ahmed Mohamed Hassan Mohamed Khalifa</h2>
+          <p>Teaching Assistant at Misr University for Science and Technology</p>
+          <p>Production Engineer at Giza Power Industry</p>
+          <div class="tag-row">
+            <span>ROS1/ROS2</span>
+            <span>C++</span>
+            <span>C#</span>
+            <span>Python</span>
+            <span>ASP.NET Core</span>
+            <span>SQL Server</span>
+            <span>Matlab</span>
+            <span>PCB design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-label">About Me</p>
+          <h2>Engineering background with software development skills.</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            I am a Mechatronics Engineering graduate from Misr University for Science and Technology,
+            with hands-on experience in robotics, embedded systems, automation, CNC machines,
+            PLC programming, and production engineering.
+          </p>
+          <p>
+            Recently, I expanded my work into full stack development using
+            ASP.NET Core MVC, C#, Entity Framework Core, SQL Server, React, Node.js, Express,
+            MongoDB, and deployment workflows. My goal is to build reliable systems that connect
+            hardware, software, and real-world industrial needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section soft" id="skills">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2>Technical Skill Set</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Software & Full Stack</h3>
+            <ul>
+              <li>C# / ASP.NET Core MVC</li>
+              <li>.NET 8 Full Stack Development</li>
+              <li>Entity Framework Core</li>
+              <li>SQL Server / SSMS</li>
+              <li>Identity, Authentication & Roles</li>
+              <li>React, Vite, Node.js, Express</li>
+              <li>MongoDB Atlas</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Robotics & Embedded</h3>
+            <ul>
+              <li>ROS / ROS 2 Jazzy</li>
+              <li>C++ Robotics Nodes</li>
+              <li>Arduino UNO / Mega / Nano</li>
+              <li>ESP32 IoT Systems</li>
+              <li>Motor Drivers L298N</li>
+              <li>LCD / I2C / Sensors</li>
+              <li>Proteus Simulation</li>
+              <li>EasyEDA PCB Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Engineering Tools</h3>
+            <ul>
+              <li>SolidWorks</li>
+              <li>AutoCAD</li>
+              <li>MATLAB / Simulink</li>
+              <li>PLC / TIA Portal</li>
+              <li>G-code</li>
+              <li>CNC Turning & Milling</li>
+              <li>Dialux</li>
+              <li>Excel / Word</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected Projects & Works</h2>
+          </div>
+          <div class="filters" id="projectFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dotnet">.NET</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
+            <button class="filter-btn" data-filter="embedded">Embedded</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section soft" id="experience">
+      <div class="container">
+        <p class="section-label">Experience</p>
+        <h2>Employment & Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>09/2024 — Present</span>
+            <h3>Teaching Assistant</h3>
+            <p>Misr University for Science and Technology</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>02/2025 — Present</span>
+            <h3>Production Engineer</h3>
+            <p>Giza Power Industry</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>Sep 2019 — Jul 2024</span>
+            <h3>Bachelor of Engineering</h3>
+            <p>Mechatronics Engineering — Misr University for Science and Technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses">
+      <div class="container">
+        <p class="section-label">Courses</p>
+        <h2>Training & Courses</h2>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <h3>Automotive Training Course</h3>
+            <p>Engovation — Aug 2024 to Sep 2024</p>
+          </article>
+          <article class="course-card">
+            <h3>Robot Operating System (ROS)</h3>
+            <p>Robotics Corner — Jun 2023 to Mar 2024</p>
+          </article>
+          <article class="course-card">
+            <h3>TIA Portal Programming</h3>
+            <p>S7-1200 & S7-1500 — Arab Institute for Advanced Technology</p>
+          </article>
+          <article class="course-card">
+            <h3>CNC Turning & Milling</h3>
+            <p>Programming and operation basics — Arab Institute for Advanced Technology</p>
+          </article>
+          <article class="course-card">
+            <h3>Flight Simulator Training</h3>
+            <p>EgyptAir Academy</p>
+          </article>
+          <article class="course-card">
+            <h3>Electronics Devices Assembly Workshop</h3>
+            <p>Arab Institute for Advanced Technology</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Let’s build something useful.</h2>
+          <p>
+            Open to engineering, automation, robotics, embedded systems,
+            production engineering, and .NET full stack opportunities.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:ahmedkhalifa0982@gmail.com">ahmedkhalifa0982@gmail.com</a>
+          <a href="tel:+201225164992">+20 122 516 4992</a>
+          <a href="#" aria-label="GitHub link">GitHub — add your link here</a>
+          <a href="#" aria-label="LinkedIn link">LinkedIn — add your link here</a>
+          <p class="small-note">Location: El Kanater El Kheiria, Egypt</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Ahmed Khalifa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
+    ⬆️
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
