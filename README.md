@@ -53,3 +53,38 @@ Just open `index.html` in your browser.
 6. Deploy.
 
 Because this is a static portfolio, you do not need a backend to publish it.
+
+
+## Project cards open GitHub
+
+Each project object in `js/main.js` now has a `link` value. The current link is:
+
+```text
+https://github.com/AHMEDKHALIFA0982
+```
+
+To open a specific project repository, replace the `link` value for that project with its repository URL.
+
+
+## Certificates Section
+
+A new **Certificates** section was added to the portfolio.
+
+Put your certificate PDFs/images here:
+
+```text
+assets/certificates/
+```
+
+The current certificate links in `index.html` are:
+
+```text
+assets/certificates/automotive-training.pdf
+assets/certificates/ros-course.pdf
+assets/certificates/tia-portal.pdf
+assets/certificates/cnc-training.pdf
+assets/certificates/flight-simulator.pdf
+assets/certificates/electronics-assembly.pdf
+```
+
+Rename your real certificate files to match these names, or edit the `href` paths in `index.html`.

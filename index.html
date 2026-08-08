@@ -25,6 +25,7 @@
         <a href="#projects" class="nav-btn">Projects</a>
         <a href="#experience" class="nav-btn">Experience</a>
         <a href="#courses" class="nav-btn">Courses</a>
+        <a href="#certificates" class="nav-btn">Certificates</a>
         <a href="#contact" class="nav-btn">Contact</a>
       </div>
       </div>
@@ -246,6 +247,64 @@
         </div>
       </div>
     </section>
+    <!-- CERTIFICATES -->
+    <section class="section soft" id="certificates">
+      <div class="container">
+        <p class="section-label">Certificates</p>
+        <h2>Courses & Training Certificates</h2>
+        <p class="section-intro">
+          Here are my professional courses and training certificates. Replace the placeholder files
+          inside <strong>assets/certificates</strong> with your real certificate PDFs or images.
+        </p>
+
+        <div class="certificates-grid">
+          <a class="certificate-card" href="assets/certificates/automotive-training.pdf" data-certificate-popup="true">
+            <div class="certificate-icon">🚗</div>
+            <h3>Automotive Training Course</h3>
+            <p>Engovation — Aug 2024 to Sep 2024</p>
+            <span>View Certificate</span>
+          </a>
+
+          <a class="certificate-card" href="assets/certificates/ros-course.pdf" data-certificate-popup="true">
+            <div class="certificate-icon">🤖</div>
+            <h3>Robot Operating System (ROS)</h3>
+            <p>Robotics Corner — Jun 2023 to Mar 2024</p>
+            <span>View Certificate</span>
+          </a>
+
+          <a class="certificate-card" href="#"
+            data-certificates="assets/certificates/tia-portal1.pdf, assets/certificates/tia-portal.pdf">
+            <div class="certificate-icon">🏭</div>
+            <h3>TIA Portal Programming</h3>
+            <p>S7-1200 & S7-1500 — Arab Institute for Advanced Technology</p>
+            <span>View Certificates</span>
+          </a>
+
+          <a class="certificate-card" href="assets/certificates/cnc-training.pdf" data-certificate-popup="true">
+            <div class="certificate-icon">⚙️</div>
+            <h3>CNC Turning & Milling</h3>
+            <p>Programming and operation basics — Arab Institute for Advanced Technology</p>
+            <span>View Certificate</span>
+          </a>
+
+          <a class="certificate-card" href="assets/certificates/flight-simulator.pdf" data-certificate-popup="true">
+            <div class="certificate-icon">✈️</div>
+            <h3>Flight Simulator Training</h3>
+            <p>EgyptAir Academy — Aug 2022 to Sep 2022</p>
+            <span>View Certificate</span>
+          </a>
+
+          <a class="certificate-card" href="assets/certificates/electronics-assembly.pdf" data-certificate-popup="true">
+            <div class="certificate-icon">🔌</div>
+            <h3>Electronics Devices Assembly Workshop</h3>
+            <p>Arab Institute for Advanced Technology — Sep 2021</p>
+            <span>View Certificate</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- CONTACT -->
     <section class="section contact-section" id="contact">
@@ -282,6 +341,23 @@
   <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">
     ⬆️
   </button>
+
+
+  <!-- CERTIFICATE MODAL -->
+  <div class="certificate-modal" id="certificateModal" aria-hidden="true">
+    <div class="certificate-modal-overlay" id="certificateOverlay"></div>
+
+    <div class="certificate-modal-box" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle">
+      <div class="certificate-modal-header">
+        <h3 id="certificateModalTitle">Certificate</h3>
+        <button class="certificate-close" id="certificateClose" type="button" aria-label="Close certificate">×</button>
+      </div>
+
+      <div class="certificate-viewer" id="certificateViewer">
+        <!-- Certificate PDF or image appears here -->
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
