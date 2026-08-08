@@ -226,14 +226,70 @@ function closeCertificateModal() {
   document.body.style.overflow = "";
 }
 
+
+function openMultipleCertificatesModal(filePaths, title) {
+  if (!certificateModal || !certificateViewer) return;
+
+  certificateTitle.textContent = title || "Certificates";
+  certificateViewer.innerHTML = "";
+
+  filePaths.forEach((filePath, index) => {
+    const lowerPath = filePath.toLowerCase();
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "certificate-file-box";
+
+    const label = document.createElement("h4");
+    label.textContent = `Certificate ${index + 1}`;
+    wrapper.appendChild(label);
+
+    if (lowerPath.endsWith(".pdf")) {
+      const iframe = document.createElement("iframe");
+      iframe.src = filePath;
+      iframe.title = `${title} Certificate ${index + 1}`;
+      wrapper.appendChild(iframe);
+    } else if (
+      lowerPath.endsWith(".jpg") ||
+      lowerPath.endsWith(".jpeg") ||
+      lowerPath.endsWith(".png") ||
+      lowerPath.endsWith(".webp")
+    ) {
+      const image = document.createElement("img");
+      image.src = filePath;
+      image.alt = `${title} Certificate ${index + 1}`;
+      wrapper.appendChild(image);
+    } else {
+      const error = document.createElement("div");
+      error.className = "certificate-error";
+      error.innerHTML = "<p>Please use a PDF, JPG, PNG, or WEBP certificate file.</p>";
+      wrapper.appendChild(error);
+    }
+
+    certificateViewer.appendChild(wrapper);
+  });
+
+  certificateModal.classList.add("show");
+  certificateModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
 certificateCards.forEach(card => {
   card.addEventListener("click", event => {
     event.preventDefault();
 
-    const filePath = card.getAttribute("href");
     const title = card.querySelector("h3")?.textContent || "Certificate";
 
-    openCertificateModal(filePath, title);
+    if (card.dataset.certificates) {
+      const files = card.dataset.certificates
+        .split(",")
+        .map(file => file.trim())
+        .filter(Boolean);
+
+      openMultipleCertificatesModal(files, title);
+    } else {
+      const filePath = card.getAttribute("href");
+      openCertificateModal(filePath, title);
+    }
   });
 });
 
