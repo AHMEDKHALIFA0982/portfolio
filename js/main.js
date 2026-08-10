@@ -69,7 +69,7 @@ const projects = [
     icon: "⚙️",
     description: "A hardware control system using Arduino Mega, 4 DC motors, 2 L298N drivers, LCD display, switches and potentiometers for speed/time control with countdown stopping logic.",
     tags: ["Arduino Mega", "L298N", "LCD", "Proteus", "PCB Design"],
-    link: "https://github.com/AHMEDKHALIFA0982"
+    link: "https://github.com/AHMEDKHALIFA0982/Quad-Magnetic-Stirrer"
   },
   {
     title: "ROS 2 Jazzy Robotics Projects",
