@@ -5,7 +5,7 @@ const projects = [
     icon: "⚡",
     description: "A smart energy management project using microgrid concepts, artificial intelligence, MATLAB and Simulink to improve power monitoring, analysis and control.",
     tags: ["AI", "MATLAB", "Simulink", "Microgrid"],
-    link: "https://github.com/AHMEDKHALIFA0982"
+    link: "https://github.com/AHMEDKHALIFA0982/Smart-Mobile-Power-Station"
   },
   {
     title: "Restaurant Website",
