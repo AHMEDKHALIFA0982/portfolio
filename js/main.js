@@ -85,7 +85,7 @@ const projects = [
     icon: "🦾",
     description: "A MATLAB/Simulink robotic arm project using DH parameters, forward/inverse kinematics, trajectory drawing and Simscape Multibody simulation concepts.",
     tags: ["MATLAB", "Simulink", "DH", "IK/FK"],
-    link: "https://github.com/AHMEDKHALIFA0982"
+    link: "https://github.com/AHMEDKHALIFA0982/4-DOF-Robot"
   },
   {
     title: "Automation & PLC Training Projects",
